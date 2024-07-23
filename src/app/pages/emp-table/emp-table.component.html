@@ -1,3 +1,19 @@
 <p>Emp name</p> <input type="text" [(ngModel)]="empName"/>
 <p>Emp age</p> <input type="text" [(ngModel)]="empAge"/>
 <p>Emp Reg number</p> <input type="text" [(ngModel)]="empRegnumber" />
+<br><br>
+<input type="button" value="Add" (click)="add()" />
+<br><br>
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Reg No</td> 
+    </tr>
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.empName}}</td>
+        <td>{{employee.empAge}}</td>
+        <td>{{employee.empRegnumber}}</td>
+    </tr>
+</table>

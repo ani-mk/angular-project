@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import { CommonModule } from '@angular/common'; 
 import { EmpTableRoutingModule } from './emp-table-routing.module';
-import { EmpTableComponent } from './emp-table.component';
+import { EmpTableComponent } from './emp-table.component'; 
+import { AppComponent } from 'src/app/app.component';
+import { AppModule } from 'src/app/app.module';
 
 
 @NgModule({
-  declarations: [EmpTableComponent],
+  declarations: [EmpTableComponent,
+    AppComponent],
   imports: [
     CommonModule,
-    EmpTableRoutingModule
-  ]
+    EmpTableRoutingModule,
+    AppModule
+  ],
+  bootstrap: [EmpTableComponent]
 })
 export class EmpTableModule { }
