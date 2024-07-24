@@ -305,12 +305,14 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
  
-  <span>Welcome</span>
+  <span [routerLink]="['dashboard']">Emp entry</span> &nbsp;&nbsp;&nbsp;&nbsp;
+  <span [routerLink]="['viewdetail']">View table</span>&nbsp;&nbsp;&nbsp;&nbsp; 
     
 </div>
+<router-outlet></router-outlet>
 
-<div class="content" role="main"> 
- <app-emp-table></app-emp-table>
-</div>
+<!-- <div class="content" role="main"> 
+ <app-emp-table></app-emp-table>  
+</div> -->
 
  

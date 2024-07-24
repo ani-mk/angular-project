@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { EmpTableComponent } from './pages/emp-table/emp-table.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { EmpDetailComponent } from './pages/emp-detail/emp-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmpTableComponent
+    EmpTableComponent,
+    EmpDetailComponent
   ],
   imports: [
     BrowserModule,
